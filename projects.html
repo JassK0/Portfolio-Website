@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* Reset & Base */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Inter', sans-serif; line-height: 1.6; color: #333; }
+    a { text-decoration: none; color: inherit; }
+    img { max-width: 100%; display: block; }
+
+    /* Layout */
+    header { background: #f8f9fa; padding: 1rem 2rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 100; }
+    nav { display: flex; justify-content: space-between; align-items: center; }
+    .nav-links { list-style: none; display: flex; gap: 1.5rem; }
+
+    .hero { display: flex; flex-direction: column; align-items: center; justify-content: center; height: 90vh; text-align: center; background: #e9ecef; padding: 0 1rem; }
+    .hero h1 { font-size: 3rem; margin-bottom: 1rem; }
+    .hero p { font-size: 1.25rem; margin-bottom: 2rem; }
+    .btn { display: inline-block; padding: 0.75rem 1.5rem; background: #007bff; color: #fff; border-radius: 4px; font-weight: 600; transition: background 0.3s; }
+    .btn:hover { background: #0056b3; }
+
+    section { padding: 4rem 2rem; max-width: 1000px; margin: 0 auto; }
+    h2.section-title { font-size: 2rem; margin-bottom: 1.5rem; text-align: center; }
+
+    .about p { max-width: 700px; margin: 0 auto; }
+
+    .projects-grid { display: grid; gap: 2rem; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
+    .project-card { border: 1px solid #ddd; border-radius: 8px; overflow: hidden; transition: transform 0.3s; }
+    .project-card:hover { transform: translateY(-5px); }
+    .project-card img { height: 160px; object-fit: cover; }
+    .project-card .content { padding: 1rem; }
+    .project-card h3 { margin-bottom: 0.5rem; }
+
+    .contact form { display: grid; gap: 1rem; max-width: 500px; margin: 0 auto; }
+    .contact input, .contact textarea { width: 100%; padding: 0.75rem; border: 1px solid #ccc; border-radius: 4px; }
+    .contact button { align-self: flex-start; }
+
+    footer { text-align: center; padding: 2rem 1rem; background: #f1f3f5; font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo"><a href="#">MyLogo</a></div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <h1>Hello, I'm Jane Doe</h1>
+    <p>I'm a web developer specializing in creating (and occasionally designing) exceptional digital experiences.</p>
+    <a href="#projects" class="btn">View My Work</a>
+  </section>
+
+  <section id="about" class="about">
+    <h2 class="section-title">About Me</h2>
+    <p>With over 5 years of experience building web applications, I have worked across the full stack—from crafting intuitive user interfaces to optimizing server-side performance. I'm passionate about turning ideas into reality through code.</p>
+  </section>
+
+  <section id="projects" class="projects">
+    <h2 class="section-title">Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <img src="https://via.placeholder.com/400x200" alt="Project 1">
+        <div class="content">
+          <h3>Project One</h3>
+          <p>A brief description of what this project is and what technologies were used.</p>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="https://via.placeholder.com/400x200" alt="Project 2">
+        <div class="content">
+          <h3>Project Two</h3>
+          <p>A brief description of what this project is and what technologies were used.</p>
+        </div>
+      </div>
+      <!-- Add more project cards as needed -->
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2 class="section-title">Get In Touch</h2>
+    <form action="#" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Jane Doe. All rights reserved.</p>
+    <p>Follow me on <a href="#">GitHub</a>, <a href="#">LinkedIn</a>, <a href="#">Twitter</a>.</p>
+  </footer>
+</body>
+</html>
