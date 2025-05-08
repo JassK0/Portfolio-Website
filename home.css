@@ -11,6 +11,7 @@ body{
 
 
 header { 
+    height: 4rem;
     position: fixed;
     top: 0;
     left: 0;
@@ -24,18 +25,29 @@ header {
     border-left: none;
     border-right: none;
     
+    
  }
 
  nav { 
     display: flex; 
     justify-content: space-between; 
     align-items: right; 
+    margin-right: 3rem;
+
 }
 .nav-links { 
     list-style: none;
     display: flex; 
     margin-left: auto;
     gap: 6rem; 
+}
+
+.nav-links li a { 
+    font-family: 'Orbitron', sans-serif;
+    font-size: 20px;
+    color: #FFFFFF;
+    text-decoration: none;
+
 }
 
 
@@ -58,6 +70,8 @@ header {
     width: 400px;             /* container width */
     height: 600px;            /* container height */
     overflow: hidden;         /* hides overflowing content */
+    margin-top: 2rem;
+
 
     
 
