@@ -11,17 +11,15 @@ body{
 
 
 header { 
-    background: #7a1e02; 
-    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    width: 500px;
-    margin-left: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 6px 4px rgba(0,0,0,0.15); 
-    border-radius: 12px 12px 12px 12px;
-    z-index: 100;
+    z-index: 4;
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(1px);
+    background-color: #b280161a;
+    box-sizing: content-box
  }
 
  .banner{
@@ -29,8 +27,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
-    background-color: #6f6f6f;
+    /* padding: 1rem; */
+    /* background-color: #6f6f6f; */
     border-radius: 12px;
  }
 
@@ -108,16 +106,20 @@ nav {
     color: #F5B82E;
     display: flex;
     /* justify-content: center; */
-    align-items: center;
+    /* align-items: center; */
     /* text-align: center; */
     margin-top: -44px;
     /* margin-left: 1rem; */
-    height: 160px;
-    width: 360px;
+    height: 140px;
+    width: 500px;
     /* border: 2px solid #a4c8ec;
     border-radius: 12px;
     background-color: #555;
     box-shadow: 0 6px 4px rgba(0, 0, 0, 0.15); */
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+
 
 }
 
@@ -133,10 +135,10 @@ nav {
     align-items: center;
     /* height: 460px; */
     /* width: 1335px; */
-    background-color: #6f6f6f;
+    /* background-color: #6f6f6f; */
     border-radius: 12px;
     font-size: 22px;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .grid3byx{
@@ -155,7 +157,23 @@ nav {
 .grid-blocks{
     background: #a93535;
     border-radius: 6px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.banner2-text{
+    color: azure;
+}
+
+.proj1-text{
+    color: aqua;
 }
 
 
 
+
+
+
+
+  
