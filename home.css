@@ -1,10 +1,19 @@
 
 
+
+html{
+    scroll-padding-top: 5rem; 
+    /* makes sure i can see titels after clicking navbar links */
+}
+
+
 body{
     background: linear-gradient(to bottom right, #121212, #343434, #121212);
     color: #F5B82E;    color: #FFFFFF;    color: #121212;
-    padding: 2rem 4rem;
+    padding: 1rem 4rem;
     overflow-x: hidden;
+    
+
 
     
 }
@@ -12,18 +21,23 @@ body{
 
 header { 
     height: 4rem;
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
+
+    max-width: 1400px;
+    margin: 0 auto;
     width: 100%;
+
+
     z-index: 4;
     -webkit-backdrop-filter: blur(4px);
     backdrop-filter: blur(4px);
     background-color: #0000001a;
     box-sizing: content-box;
     border: 1px solid rgb(255, 255, 255);
-    border-left: none;
-    border-right: none;
+    /* border-left: none;
+    border-right: none; */
     
     
  }
@@ -31,8 +45,8 @@ header {
  nav { 
     display: flex; 
     justify-content: space-between; 
-    align-items: right; 
-    margin-right: 3rem;
+    /* align-items: right;  */
+    margin-right: 2rem;
 
 }
 .nav-links { 
@@ -44,7 +58,7 @@ header {
 
 .nav-links li a { 
     font-family: 'Orbitron', sans-serif;
-    font-size: 20px;
+    font-size: 24px;
     color: #FFFFFF;
     text-decoration: none;
 
@@ -148,10 +162,10 @@ header {
 
 
 .banner2{
-    width: 40%;
+    width: 100%;
     height: 100%;
     /* margin: 2rem 0;
-    padding: 1rem; */
+    padding: 1rem;
     position: sticky;
     justify-content: center;
     align-items: center;
@@ -160,20 +174,20 @@ header {
     /* background-color: #6f6f6f; */
     border-radius: 12px;
     font-size: 22px;
-    margin-top: 22rem;
-    margin: 0 auto;
+    margin-top: 14rem;
+    /* margin: 0 auto; */
     /* text-align: center; */
 }
 
 .grid3byx{
     
     display: grid;
-    grid-template-columns: repeat(1,1fr);
+    grid-template-columns: repeat(3,1fr);
 
     /* grid-auto-rows: auto; */
     grid-area: 2rem;
     gap: 2rem;
-    padding: 1rem;
+    /* padding: 1rem; */
     margin: 0 auto;
 
 }
@@ -189,21 +203,27 @@ header {
 }
 
 .banner2-text{
+    font-family: 'Orbitron', sans-serif;
     color: azure;
 }
 
 
 .proj-title{
+    font-family: 'Orbitron', sans-serif;
     margin-top: -1rem;
-    color: #354aa9;
+    color: #ffffff;
 }
 
 
 .proj-text{
+    font-family: 'Rajdhani', sans-serif;
     color: aqua;
+    width: 350px; /* aligns with img*/
+    margin: 0 auto;
 }
 
 
+/* container of the img */
 .proj-img{
     width: auto;             
     height: auto;           
@@ -212,49 +232,29 @@ header {
     align-items: center;
     justify-content: center;
     margin: auto;
-    padding: 1rem;
+    padding: 2rem;
+    object-fit: cover;
+    
+
 
 }
+
+
 
 .proj-img img{
-    /* width: auto;
-    height: auto; */
-    object-fit: cover;
-    /* display: block; */
-    border-radius: 12px;
-    
-}
-
-/* .proj-img {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    padding: 1rem;
-}
-
-.proj-img img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 12px;
-} */
-
-.grid-links img{
     display: block;               
-    width: 100%;                 
-    height: 100%;
+    width: 350px;                 
+    height: 200px;
+    object-fit: cover;
+    
+    border-radius: 12px;
     transition: 
       transform 0.3s ease,       
       box-shadow 0.3s ease,      
       filter 0.3s ease;   
 }
 
-.grid-links:hover img {
+.proj-img:hover img {
     transform: scale(1.01);               
     /* box-shadow: 0 8px 20px rgba(0,0,0,0.3);  */
     filter: brightness(1.1);              
@@ -277,6 +277,35 @@ header {
     /* box-shadow: 0 8px 20px rgba(0,0,0,0.3);  */
     filter: brightness(1.1);              
   }
+
+  .banner3{
+    position: fixed;
+    top: 700px;
+    left: 1400px;
+    z-index: 4;
+    max-width: 75px;
+    max-height: 75px;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #F5B82E;
+  }
+
+  .top-ul{
+    list-style: none;
+    display: flex; 
+    margin-left: auto;
+    gap: 6rem; 
+  }
+
+  .top-ul li a { 
+    font-family: 'Orbitron', sans-serif;
+    font-size: 24px;
+    color: #FFFFFF;
+    text-decoration: none;
+    
+
+}
 
 
 
